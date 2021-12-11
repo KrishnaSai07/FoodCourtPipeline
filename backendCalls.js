@@ -4,10 +4,10 @@ const getOrders = () =>{
     return new Promise((resolve,reject)=>{
 
         var connection = mysql.createConnection({
-            host:'footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',
+            host:'',
             port:'3306',
-            user:'admin',
-            password:'JethroGibbs',
+            user:'',
+            password:'',
             database: 'foodcourt'
         })
         
@@ -27,10 +27,10 @@ const addOrder = (data) =>{
     return new Promise((resolve,reject)=>{
 
         var connection = mysql.createConnection({
-            host:'footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',
+            host:'',
             port:'3306',
-            user:'admin',
-            password:'JethroGibbs',
+            user:'',
+            password:'',
             database: 'foodcourt'
         })
         
@@ -50,12 +50,11 @@ const updateOrders = (orderNumber) => {
     return new Promise((resolve,reject)=>{
 
         var connection = mysql.createConnection({
-            host:'footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',
+           host:'',
             port:'3306',
-            user:'admin',
-            password:'JethroGibbs',
-            database: 'foodcourt'
-        })
+            user:'',
+            password:'',
+            database: 'foodcourt'        })
         
         connection.connect()
     
@@ -73,10 +72,10 @@ const getFoodItems = (itemCategory) =>{
     return new Promise((resolve,reject)=>{
 
         var connection = mysql.createConnection({
-            host:'footballmadesimple.c18ndxpocyny.us-east-2.rds.amazonaws.com',
+           host:'',
             port:'3306',
-            user:'admin',
-            password:'JethroGibbs',
+            user:'',
+            password:'',
             database: 'foodcourt'
         })
         
